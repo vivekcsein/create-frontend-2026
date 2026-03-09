@@ -7,8 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "format": "prettier --write ."
+    "lint": "next lint",
+    "lint:eslint": "eslint",
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "16.1.6",
@@ -34,6 +36,14 @@
     "sharp",
     "unrs-resolver"
   ],
+  "lint-staged": {
+    "*.{js,ts,tsx,json,md,css}": [
+      "prettier --write"
+    ],
+    "*.{js,ts,tsx}": [
+      "next lint --fix"
+    ]
+  },
   "keywords": [
     "bun",
     "typescript",
