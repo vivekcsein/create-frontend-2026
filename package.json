@@ -1,6 +1,7 @@
 {
   "name": "create-frontend-2026",
   "version": "0.1.0",
+  "description": "Future-ready 2026 frontend template for creating robust, enterprise-level web apps.",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -31,5 +32,12 @@
   "trustedDependencies": [
     "sharp",
     "unrs-resolver"
+  ],
+  "keywords": [
+    "bun",
+    "typescript",
+    "next.js",
+    "react.js",
+    "frontend"
   ]
 }
