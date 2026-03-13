@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>Next.js begginer template...</main>;
+  return <div>Next.js begginer template...</div>;
 }
