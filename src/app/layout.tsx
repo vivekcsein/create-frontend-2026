@@ -1,4 +1,5 @@
 import "@styles/globals.css";
+import "@styles/ui.css";
 import AppClientLayout from "@/components/layouts/AppClientLayout";
 import { AppMetaData } from "@/packages/metadata/meta.app";
 import { DESIGN_LANGUAGE } from "@/packages/configs/config.fonts";
