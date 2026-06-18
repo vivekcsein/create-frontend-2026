@@ -39,40 +39,6 @@ const TypographyTest = () => {
         </table>
       ),
     },
-
-    {
-      name: "Label",
-      preview: <label htmlFor="demo">Label</label>,
-    },
-
-    {
-      name: "Input",
-      preview: <input id="demo" type="text" placeholder="Type here..." />,
-    },
-
-    {
-      name: "Textarea",
-      preview: <textarea placeholder="Textarea" />,
-    },
-
-    {
-      name: "Select",
-      preview: (
-        <select defaultValue="">
-          <option value="" disabled>
-            Choose...
-          </option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-        </select>
-      ),
-    },
-
-    {
-      name: "Button",
-      preview: <button>Button</button>,
-    },
-
     {
       name: "Small",
       preview: <small>Small text</small>,
@@ -101,9 +67,11 @@ const TypographyTest = () => {
     {
       name: "Pre",
       preview: (
-        <pre>{`function hello() {
-  return "Hello World";
-}`}</pre>
+        <pre>
+          {`function hello() {
+                  return "Hello World";
+            }`}
+        </pre>
       ),
     },
   ];

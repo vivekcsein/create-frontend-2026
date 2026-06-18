@@ -2,7 +2,7 @@
    LINK (THEME-AWARE + ANIMATED)
    ========================================================= */
 
-Link {
+.Link {
   position: relative;
   display: inline-block;
   font-weight: 500;
@@ -16,7 +16,7 @@ Link {
 }
 
 /* ✨ Animated underline */
-Link::after {
+.Link::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -30,29 +30,29 @@ Link::after {
 }
 
 /* 💜 Hover effect */
-Link:hover {
+.Link:hover {
   color: hsl(var(--primary));
   opacity: 0.9;
 }
 
-Link:hover::after {
+.Link:hover::after {
   width: 100%;
   left: 0;
 }
 
 /* ⚡ Active (click feedback) */
-Link:active {
+.Link:active {
   opacity: 0.7;
 }
 
 /* ♿ Focus (accessibility) */
-Link:focus-visible {
+.Link:focus-visible {
   outline: none;
   box-shadow: 0 0 0 2px hsl(var(--ring));
   border-radius: 4px;
 }
 
-Link.link-accent {
+.Link.link-accent {
   color: hsl(var(--accent));
 }
 
@@ -64,7 +64,7 @@ Link.link-accent::after {
    BUTTON (PREMIUM + GLOSSY)
    ========================================================= */
 
-Button {
+.Button {
   font-family: inherit;
   font-size: 0.9375rem;
   font-weight: 500;
@@ -100,7 +100,7 @@ Button {
 }
 
 /* ✨ Glossy Shine Layer */
-Button::before {
+.Button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -114,7 +114,7 @@ Button::before {
 }
 
 /* 🔥 Shine animation on hover */
-Button:hover::before {
+.Button:hover::before {
   animation: shine 0.9s ease forwards;
 }
 
@@ -125,7 +125,7 @@ Button:hover::before {
 }
 
 /* 💜 Hover (lift + glow) */
-Button:hover {
+.Button:hover {
   transform: translateY(-2px);
 
   box-shadow:
@@ -136,13 +136,13 @@ Button:hover {
 }
 
 /* ⚡ Active (press) */
-Button:active {
+.Button:active {
   transform: scale(0.96);
   box-shadow: 0 5px 12px hsl(var(--primary) / 0.25);
 }
 
 /* ♿ Focus */
-Button:focus-visible {
+.Button:focus-visible {
   outline: none;
   box-shadow:
     0 0 0 2px hsl(var(--background)),
@@ -150,7 +150,7 @@ Button:focus-visible {
 }
 
 /* Disabled */
-Button:disabled {
+.Button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
   transform: none;
@@ -158,12 +158,12 @@ Button:disabled {
 }
 
 /* ghost button */
-Button.ghost {
+.Button.ghost {
   background: transparent;
   color: hsl(var(--primary));
   border: 1px solid hsl(var(--primary) / 0.3);
 }
 
-Button.ghost:hover {
+.Button.ghost:hover {
   background: hsl(var(--primary) / 0.1);
 }

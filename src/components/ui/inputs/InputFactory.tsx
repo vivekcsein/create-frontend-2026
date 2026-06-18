@@ -1,3 +1,4 @@
+import "@styles/input.css";
 import Checkbox from "./Checkbox";
 import Input from "./Input";
 import PasswordInput from "./PasswordInput";
@@ -40,3 +41,5 @@ export const InputFactory: Record<string, <T extends BaseInputProps>(input: T) =
       </select>
     ),
   };
+
+export default InputFactory;
